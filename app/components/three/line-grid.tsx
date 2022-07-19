@@ -91,7 +91,7 @@ const LineGrid: FC<GridProps> = ({
   return (
     <>
       <instancedMesh ref={refH} args={[null, null, count]}>
-        <boxBufferGeometry args={geometryH}>
+        <boxBufferGeometry args={geometryH as any}>
           <instancedBufferAttribute />
         </boxBufferGeometry>
         <meshBasicMaterial
@@ -103,7 +103,7 @@ const LineGrid: FC<GridProps> = ({
       </instancedMesh>
 
       <instancedMesh ref={refV} args={[null, null, count]}>
-        <boxBufferGeometry args={geometryV}>
+        <boxBufferGeometry args={geometryV as any}>
           <instancedBufferAttribute />
         </boxBufferGeometry>
         <meshBasicMaterial

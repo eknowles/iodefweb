@@ -58,7 +58,7 @@ const SquareGrid: FC<SquareGridProps> = ({
 
   return (
     <instancedMesh ref={ref} args={[null, null, count]}>
-      <boxBufferGeometry args={geometry}>
+      <boxBufferGeometry args={geometry as any}>
         <instancedBufferAttribute />
       </boxBufferGeometry>
       <meshBasicMaterial
