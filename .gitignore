@@ -1,0 +1,8 @@
+node_modules
+.idea/*
+*.iml
+
+.vercel
+
+# Project exclude paths
+/.next/
